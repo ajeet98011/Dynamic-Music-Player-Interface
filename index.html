@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- title -->
+    <title>Music Player</title>
+    <!-- created by AJeet Kumar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://img.freepik.com/free-vector/music-note-with-wave-line-design-background_460848-11813.jpg?t=st=1714216760~exp=1714220360~hmac=a19f36156c886e5b1dea1e1a98d71c0c43c3bc033fc98dfc8150001e8b193a13&w=900" type="image/x-icon">
+    <!-- fontawesome code  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/a2b3da0c65.js" crossorigin="anonymous" charset="utf-8">
+    </script>
+    <!-- external css link -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <main class="player">
+        <div class="header">
+            <a href="#" class="button">
+                <i class="fas fa-bars"></i>
+            </a>
+            <p>Now Playing</p>
+            <a href="#" class="button">
+                <img src="more.svg" alt="">
+            </a>
+        </div>
+
+        <img src="images/Ajeet.jpg" alt="album" class="image" id="image">
+        <div class="info">
+            <h1 id="mName">Music Name</h1>
+            <p id="aName">Artist Name</p>
+        </div>
+
+        <div class="progress">
+            <div class="progress-time">
+                <span id="currenttimetext" class="left">00:00</span>
+                <span id="durationtimetext" class="rigth">00:00</span>
+            </div>
+            <div class="progress-bar">
+                <input type="range" name="" id="seekslider" class="seekslider" min="0" max="100" value="0" step="1">
+            </div>
+        </div>
+        <ul class="buttons">
+            <span id="random" class="shuffle button button-sm">
+          <i class="fas fa-random fa-sm"></i>
+        </span>
+            <span id="prevbtn" class="prev button button-md">
+          <i class="fas fa-step-backward"></i>
+        </span>
+            <span id="playpausebtn" class="playpause button button-lg">
+          <i class="fas fa-play fa-lg"></i>
+          <i class="fas fa-pause fa-lg"></i>
+        </span>
+            <span id="nextbtn" class="next button button-md">
+          <i class="fas fa-step-forward"></i>
+        </span>
+            <span id="repeat" class="loop button button-sm">
+          <i class="fas fa-circle-notch fa-sm"></i>
+        </span>
+        </ul>
+        <div class="bar"></div>
+    </main>
+    <p>Copyright &copy; All Right Reserved By Ajeet Kumar</p>
+
+    <script src="javascript/script.js" charset="utf-8"></script>
+</body>
+
+</html>
